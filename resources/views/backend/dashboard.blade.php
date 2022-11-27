@@ -1,11 +1,9 @@
-@include("backend.include.header")
-@include("backend.include.css")
-@include("backend.include.sitebar")
-@include("backend.include.headpanel")
-@include("backend.include.rightpanel")
-   
+@extends ("backend.master.mastering")
 
     <!-- ########## START: MAIN PANEL ########## -->
+
+    @section("content")
+
     <div class="br-mainpanel">
       <div class="br-pagetitle">
         <i class="icon ion-ios-home-outline"></i>
@@ -362,6 +360,7 @@
             </div><!-- card -->
 
           </div><!-- col-4 -->
+          
         </div><!-- row -->
 
       </div><!-- br-pagebody -->
@@ -369,7 +368,9 @@
       @include("backend.include.footer")
       
     </div><!-- br-mainpanel -->
+
+    @endsection
+    
     <!-- ########## END: MAIN PANEL ########## -->
 
-   
-    @include("backend.include.scripts")
+  
