@@ -10,7 +10,7 @@
     <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
     <meta name="author" content="ThemePixels">
 
-    <title>Bracket Plus Responsive Bootstrap 4 Admin Template</title>
+    <title>User Registration</title>
 
     <!-- vendor css -->
     <link href="{{ asset('backend') }}/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -33,8 +33,10 @@
             @csrf
 
        {{-- name --}}
+
        <div class="form-group">
         <input type="text" class="form-control" placeholder="Enter your Full Name" name="name">
+        <x-input-error :messages="$errors->get('name')" class="mt-2" />
       </div><!-- form-group -->
 
         {{-- role --}}
@@ -44,6 +46,7 @@
             <option value="2">User</option>
             <option value="3">Vendor</option>
         </select>
+        <x-input-error :messages="$errors->get('role')" class="mt-2" />
         </div>
 
          {{-- email --}}
@@ -55,11 +58,13 @@
          {{-- password --}}
          <div class="form-group">
             <input type="password" class="form-control" placeholder="Enter your password" name="password">
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
           </div><!-- form-group -->
 
           {{-- confirm password --}}
          <div class="form-group">
-            <input type="password" class="form-control" placeholder="Confirm your password" name="password" name="password_confirmation">
+            <input type="password" class="form-control" placeholder="Confirm your password" name="password_confirmation">
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
           </div><!-- form-group -->
   
         <div class="form-group">
@@ -75,11 +80,13 @@
         
         <button type="submit" class="btn btn-info btn-block">Sign Up</button>
 
-        <div class="mg-t-40 tx-center">Not yet a member? <a href="" class="tx-info">Sign Up</a></div>
+        <div class="mg-t-40 tx-center">Not yet a member? <a href="{{ route('login') }}" class="tx-info">Sign In</a></div>
       </div><!-- login-wrapper -->
+
+    </form>
     
     </div><!-- d-flex -->
-</form>
+
 
     <script src="{{ asset('backend') }}/lib/jquery/jquery.min.js"></script>
     <script src="{{ asset('backend') }}/lib/jquery-ui/ui/widgets/datepicker.js"></script>
