@@ -80,7 +80,9 @@
         
         <button type="submit" class="btn btn-info btn-block">Sign Up</button>
 
-        <div class="mg-t-40 tx-center">Not yet a member? <a href="{{ route('login') }}" class="tx-info">Sign In</a></div>
+        <a href="{{ Route('gotogoogle') }}" class="btn btn-success btn-block">Sign Up With Google</a>
+
+        <div class="mg-t-40 tx-center">Not y et a member? <a href="{{ route('login') }}" class="tx-info">Sign In</a></div>
       </div><!-- login-wrapper -->
 
     </form>
