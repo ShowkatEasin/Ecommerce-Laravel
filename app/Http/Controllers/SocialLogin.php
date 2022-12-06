@@ -15,7 +15,7 @@ class SocialLogin extends Controller
    public function storeSocialdata(){
 
       $socialData = Socialite::driver('google')->user();
-      dd();
+      // dd();
 
    }
 }
