@@ -89,6 +89,8 @@
     
     </div><!-- d-flex -->
 
+    
+    {{-- Script --}}
 
     <script src="{{ asset('backend') }}/lib/jquery/jquery.min.js"></script>
     <script src="{{ asset('backend') }}/lib/jquery-ui/ui/widgets/datepicker.js"></script>
