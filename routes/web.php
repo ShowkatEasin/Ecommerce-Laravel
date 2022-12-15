@@ -15,8 +15,6 @@ use App\Http\Controllers\SocialLogin;
 |
 */
 
-
-
 Route::get('gotogoogle',[SocialLogin::class,'gotogoogle'])->name("gotogoogle");
 
 Route::get('storesocialdata',[SocialLogin::class,'storeSocialdata'])->name("storeSocialdata");
@@ -38,6 +36,11 @@ Route::get('/dashboard', function () {
 Route::get('/index', function () {
     return view('frontend.index');
 });
+
+Route::get('/about', function () {
+    return view('frontend.index');
+});
+
 
 
 Route::middleware('auth')->group(function () {

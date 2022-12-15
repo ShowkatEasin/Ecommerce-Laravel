@@ -124,7 +124,7 @@
                                     </button>
                                     <ul class="main_menu_list ul_li">
                                         <li><a class="nav-link" href="#">Home</a></li>
-                                        <li><a class="nav-link" href="#">About us</a></li>
+                                        <li><a class="nav-link" href="{{ route('about') }}">About us</a></li>
                                         <li><a class="nav-link" href="#">Shop</a></li>
                                         <li><a class="nav-link" href="#">Contact Us</a></li>
                                     </ul>
