@@ -5,5 +5,5 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Stowaa -  Ecommerce HTML Template</title>
+    <title>Stowaa-Ecommerce</title>
     <link rel="shortcut icon" href="{{ asset('frontend') }}/assets/images/logo/favourite_icon_1.png">
